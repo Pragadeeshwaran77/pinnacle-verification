@@ -611,7 +611,7 @@
 									<tbody>
 										<tr>
 											<td><strong>Certificate Number</strong></td>
-											<td class="text-primary">PL/2025/JUNP1/163</td>
+											<td class="text-primary" id="certid"></td>
 										</tr>
 										<tr>
 											<td><strong>Name</strong></td>
@@ -719,22 +719,26 @@
 			"cHJhZ2FkZWVzaHdhcmFu": {
 				Name: "Pragadeeshwaran S",
 				downid: "https://drive.usercontent.google.com/download?id=1tsx_3eRt6y84Uy3NKQ69tERn8av6gFdf",
-				linkdid: "https://www.linkedin.com/"
+				linkdid: "https://www.linkedin.com/",
+				cid: "PL/2025/JUNP1/177"
 			},
 			"dmFzYW50aGFrdW1hclY=": {
 				Name: "Vasanthakumar V",
 				downid: "https://drive.usercontent.google.com/download?id=1BaxfAm09erM1y7alPzobsSwmCgYJPqKQ",
-				linkdid: "https://www.linkedin.com/"
+				linkdid: "https://www.linkedin.com/",
+				cid: "PL/2025/JUNP1/182"
 			},
 			"a2FydGhpY2s==": {
 				Name: "Karthick S",
 				downid: "https://drive.usercontent.google.com/download?id=1k703qe8RfjyLYVeLPT4cKVaTywWg4yCs",
-				linkdid: "https://www.linkedin.com/"
+				linkdid: "https://www.linkedin.com/",
+				cid: "PL/2025/JUNP1/269"
 			},
 			"c3RlZmFuYW50b24=": {
 				Name: "Stefan Anton R",
 				downid: "https://drive.usercontent.google.com/download?id=19sdcd09WeH1gqkocpkTRqfpbgGPB5QB1",
-				linkdid: "https://www.linkedin.com/"
+				linkdid: "https://www.linkedin.com/",
+				cid: "PL/2025/JUNP1/159"
 			}
 		}
 
@@ -743,6 +747,7 @@
 		if (details[rid]) {
 			document.getElementById("verid").innerText = "Verified!";
 			document.getElementById("myName").innerText = details[rid].Name;
+			document.getElementById("certid").innerText = details[rid].cid;
 			document.getElementById("linkid").href = details[rid].linkdid;
 			document.getElementById("downid").href = details[rid].downid;
 			document.getElementById("downid").target = "_blank";
