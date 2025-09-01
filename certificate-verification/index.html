@@ -745,6 +745,8 @@
 			document.getElementById("myName").innerText = details[rid].Name;
 			document.getElementById("linkid").href = details[rid].linkdid;
 			document.getElementById("downid").href = details[rid].downid;
+			document.getElementById("downid").target = "_blank";
+			document.getElementById("linkid").target = "_blank";
 		} else {
 			document.getElementById("verid").innerText = "Not Verified!";
 		}
